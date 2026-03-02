@@ -6,17 +6,14 @@
   <meta name="theme-color" content="#0b0c10" />
   <title>Avocat Viorel Dodan — ELITE EUROPE</title>
   <meta name="description" content="Avocat Viorel Dodan — consultanță juridică și reprezentare în instanță. Diaspora & Chișinău." />
-
   <meta property="og:title" content="Avocat Viorel Dodan — ELITE EUROPE" />
   <meta property="og:description" content="Reprezentare juridică pentru diaspora și Chișinău." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="/images/hero.webp" />
-
   <link rel="stylesheet" href="/styles.css" />
 </head>
 
 <body>
-  <!-- TOP BAR -->
   <div class="topbar">
     <div class="container nav">
       <div class="brand">
@@ -34,6 +31,7 @@
         <a href="#onorarii">Onorarii</a>
         <a href="#faq">FAQ</a>
         <a href="#diaspora">Diaspora</a>
+        <a href="#galerie">Galerie</a>
         <a href="#contact">Contact</a>
       </nav>
 
@@ -45,19 +43,16 @@
     </div>
   </div>
 
-  <!-- HERO -->
   <header id="acasa" class="hero">
     <div class="container hero-inner">
       <div class="kicker">
         <span class="dot"></span>
-        <span>Premium Dark</span>
-        <span class="pill">Lux • Gold</span>
+        <span data-bind="hero.kicker">Premium Dark</span>
+        <span class="pill" data-bind="hero.badge">Lux • Gold</span>
       </div>
 
-      <h1 class="h1">Reprezentare juridică pentru Diaspora și Chișinău</h1>
-      <p class="sub">
-        Strategie clară, comunicare rapidă, rezultate. Online pentru diaspora, reprezentare în instanță în Moldova.
-      </p>
+      <h1 class="h1" data-bind="hero.title">Reprezentare juridică</h1>
+      <p class="sub" data-bind="hero.subtitle"></p>
 
       <div class="cta">
         <a class="btn primary" data-wa href="#"><span>Scrie pe WhatsApp</span></a>
@@ -82,25 +77,15 @@
     </div>
   </header>
 
-  <!-- CONTENT -->
   <main>
     <section id="despre" class="section">
       <div class="container grid2">
         <div class="card pad">
-          <h2>Despre</h2>
-          <p>
-            Sunt <strong>Avocat Viorel Dodan</strong>. Ofer asistență juridică clară, orientată spre rezultat, cu
-            comunicare directă și termene respectate.
-          </p>
-          <ul class="list">
-            <li>Consultanță juridică (online / fizic)</li>
-            <li>Reprezentare în instanță</li>
-            <li>Dosare pentru diaspora (acte, procuri, litigii)</li>
-          </ul>
+          <h2 data-bind="about.title">Despre</h2>
+          <p data-bind="about.text"></p>
+          <ul class="list" data-about-bullets></ul>
           <div class="hr"></div>
-          <p class="muted">
-            Dacă vrei, ulterior îți activez și RO/RU/EN complet + CMS (editor).
-          </p>
+          <p class="muted" data-bind="about.note"></p>
         </div>
 
         <div class="card media">
@@ -116,69 +101,21 @@
     <section id="servicii" class="section">
       <div class="container">
         <div class="head">
-          <h2>Servicii</h2>
-          <p class="muted">Selectează domeniul — îți răspund rapid cu pașii următori și estimare de timp.</p>
+          <h2 data-bind="services.title">Servicii</h2>
+          <p class="muted" data-bind="services.subtitle"></p>
         </div>
 
-        <div class="cardgrid">
-          <article class="card">
-            <div class="thumb"><img src="/images/service-divort.webp" alt="Divorț și familie" loading="lazy" /></div>
-            <div class="pad">
-              <h3>Dreptul familiei</h3>
-              <p>Divorț • partaj • pensie de întreținere • custodie • ordonanțe.</p>
-              <div class="hr"></div>
-              <a class="btn small primary" data-wa href="#"><span>Scrie: „familie”</span></a>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="thumb"><img src="/images/service-consultanta.webp" alt="Consultanță juridică" loading="lazy" /></div>
-            <div class="pad">
-              <h3>Consultanță juridică</h3>
-              <p>Analiză documente • strategie • pași clari • pregătire dosar.</p>
-              <div class="hr"></div>
-              <a class="btn small primary" data-wa href="#"><span>Scrie: „consult”</span></a>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="thumb"><img src="/images/service-civil.webp" alt="Civil și succesiuni" loading="lazy" /></div>
-            <div class="pad">
-              <h3>Civil & succesiuni</h3>
-              <p>Litigii civile • succesiuni • datorii • contracte.</p>
-              <div class="hr"></div>
-              <a class="btn small primary" data-wa href="#"><span>Scrie: „civil”</span></a>
-            </div>
-          </article>
-        </div>
+        <div class="cardgrid" data-services></div>
       </div>
     </section>
 
     <section id="onorarii" class="section">
       <div class="container">
         <div class="card pad">
-          <h2>Onorarii</h2>
-          <p class="muted">
-            Onorariile se stabilesc transparent, în funcție de complexitate și termen. Pentru diaspora, putem lucra integral online.
-          </p>
+          <h2 data-bind="fees.title">Onorarii</h2>
+          <p class="muted" data-bind="fees.text"></p>
           <div class="hr"></div>
-          <div class="pricing">
-            <div class="price">
-              <div class="price-title">Consultație</div>
-              <div class="price-val">la cerere</div>
-              <div class="price-sub">Online / Chișinău</div>
-            </div>
-            <div class="price">
-              <div class="price-title">Reprezentare</div>
-              <div class="price-val">la cerere</div>
-              <div class="price-sub">Dosare + instanță</div>
-            </div>
-            <div class="price">
-              <div class="price-title">Diaspora</div>
-              <div class="price-val">la cerere</div>
-              <div class="price-sub">Acte + consult + strategie</div>
-            </div>
-          </div>
+          <div class="pricing" data-fees-cards></div>
         </div>
       </div>
     </section>
@@ -186,147 +123,33 @@
     <section id="faq" class="section">
       <div class="container">
         <div class="head">
-          <h2>FAQ</h2>
-          <p class="muted">Întrebări scurte, răspunsuri clare.</p>
+          <h2 data-bind="faq.title">FAQ</h2>
+          <p class="muted" data-bind="faq.subtitle"></p>
         </div>
-
-        <div class="faq">
-          <details class="faq-item">
-            <summary>Pot lucra cu dvs. dacă sunt în diaspora?</summary>
-            <div class="faq-body">Da. Putem face consult online, analiză acte, împuterniciri și pași concreți.</div>
-          </details>
-          <details class="faq-item">
-            <summary>În cât timp primesc răspuns?</summary>
-            <div class="faq-body">De obicei rapid. Trimite mesaj pe WhatsApp și spune pe scurt problema + ce țară ești.</div>
-          </details>
-          <details class="faq-item">
-            <summary>Ce documente să pregătesc?</summary>
-            <div class="faq-body">În funcție de caz. După primul mesaj îți trimit lista exactă.</div>
-          </details>
-        </div>
+        <div class="faq" data-faq></div>
       </div>
     </section>
 
     <section id="diaspora" class="section">
-  <div class="container">
-    <div class="head">
-      <h2>Diaspora</h2>
-      <p class="muted">Alege țara. Dacă lipsește imaginea, apare automat imaginea default.</p>
-    </div>
-
-    <div class="cardgrid">
-      <!-- IMPORTANT: onerror pune diaspora-default.webp dacă poza țării nu există -->
-      <article class="card">
-        <div class="thumb"><img src="/images/diaspora-france.webp" onerror="this.onerror=null;this.src='/images/diaspora-default.webp';" alt="Franța" loading="lazy" /></div>
-        <div class="pad"><h3>Franța</h3><p>Consultații online • acte • strategii juridice.</p><div class="hr"></div><a class="btn small ghost" href="#contact"><span>Contact</span></a></div>
-      </article>
-
-      <article class="card">
-        <div class="thumb"><img src="/images/diaspora-germany.webp" onerror="this.onerror=null;this.src='/images/diaspora-default.webp';" alt="Germania" loading="lazy" /></div>
-        <div class="pad"><h3>Germania</h3><p>Consultații online • acte • strategii juridice.</p><div class="hr"></div><a class="btn small ghost" href="#contact"><span>Contact</span></a></div>
-      </article>
-
-      <article class="card">
-        <div class="thumb"><img src="/images/diaspora-italy.webp" onerror="this.onerror=null;this.src='/images/diaspora-default.webp';" alt="Italia" loading="lazy" /></div>
-        <div class="pad"><h3>Italia</h3><p>Consultații online • acte • strategii juridice.</p><div class="hr"></div><a class="btn small ghost" href="#contact"><span>Contact</span></a></div>
-      </article>
-
-      <article class="card">
-        <div class="thumb"><img src="/images/diaspora-uk.webp" onerror="this.onerror=null;this.src='/images/diaspora-default.webp';" alt="UK" loading="lazy" /></div>
-        <div class="pad"><h3>UK</h3><p>Consultații online • acte • strategii juridice.</p><div class="hr"></div><a class="btn small ghost" href="#contact"><span>Contact</span></a></div>
-      </article>
-
-      <article class="card">
-        <div class="thumb"><img src="/images/diaspora-usa.webp" onerror="this.onerror=null;this.src='/images/diaspora-default.webp';" alt="USA" loading="lazy" /></div>
-        <div class="pad"><h3>USA</h3><p>Consultații online • acte • strategii juridice.</p><div class="hr"></div><a class="btn small ghost" href="#contact"><span>Contact</span></a></div>
-      </article>
-
-      <article class="card">
-        <div class="thumb"><img src="/images/diaspora-moldova.webp" onerror="this.onerror=null;this.src='/images/diaspora-default.webp';" alt="Moldova" loading="lazy" /></div>
-        <div class="pad"><h3>Moldova</h3><p>Reprezentare și consultații în Chișinău.</p><div class="hr"></div><a class="btn small ghost" href="#contact"><span>Contact</span></a></div>
-      </article>
-
-      <!-- Restul până la 30 (chiar dacă nu ai poze, va apărea default) -->
-      <article class="card"><div class="thumb"><img src="/images/diaspora-romania.webp" onerror="this.onerror=null;this.src='/images/diaspora-default.webp';" alt="România" loading="lazy" /></div><div class="pad"><h3>România</h3><p>Consultații online • acte.</p><div class="hr"></div><a class="btn small ghost" href="#contact"><span>Contact</span></a></div></article>
-      <article class="card"><div class="thumb"><img src="/images/diaspora-spain.webp" onerror="this.onerror=null;this.src='/images/diaspora-default.webp';" alt="Spania" loading="lazy" /></div><div class="pad"><h3>Spania</h3><p>Consultații online • acte.</p><div class="hr"></div><a class="btn small ghost" href="#contact"><span>Contact</span></a></div></article>
-      <article class="card"><div class="thumb"><img src="/images/diaspora-portugal.webp" onerror="this.onerror=null;this.src='/images/diaspora-default.webp';" alt="Portugalia" loading="lazy" /></div><div class="pad"><h3>Portugalia</h3><p>Consultații online • acte.</p><div class="hr"></div><a class="btn small ghost" href="#contact"><span>Contact</span></a></div></article>
-      <article class="card"><div class="thumb"><img src="/images/diaspora-belgium.webp" onerror="this.onerror=null;this.src='/images/diaspora-default.webp';" alt="Belgia" loading="lazy" /></div><div class="pad"><h3>Belgia</h3><p>Consultații online • acte.</p><div class="hr"></div><a class="btn small ghost" href="#contact"><span>Contact</span></a></div></article>
-      <article class="card"><div class="thumb"><img src="/images/diaspora-netherlands.webp" onerror="this.onerror=null;this.src='/images/diaspora-default.webp';" alt="Olanda" loading="lazy" /></div><div class="pad"><h3>Olanda</h3><p>Consultații online • acte.</p><div class="hr"></div><a class="btn small ghost" href="#contact"><span>Contact</span></a></div></article>
-      <article class="card"><div class="thumb"><img src="/images/diaspora-austria.webp" onerror="this.onerror=null;this.src='/images/diaspora-default.webp';" alt="Austria" loading="lazy" /></div><div class="pad"><h3>Austria</h3><p>Consultații online • acte.</p><div class="hr"></div><a class="btn small ghost" href="#contact"><span>Contact</span></a></div></article>
-      <article class="card"><div class="thumb"><img src="/images/diaspora-switzerland.webp" onerror="this.onerror=null;this.src='/images/diaspora-default.webp';" alt="Elveția" loading="lazy" /></div><div class="pad"><h3>Elveția</h3><p>Consultații online • acte.</p><div class="hr"></div><a class="btn small ghost" href="#contact"><span>Contact</span></a></div></article>
-      <article class="card"><div class="thumb"><img src="/images/diaspora-ireland.webp" onerror="this.onerror=null;this.src='/images/diaspora-default.webp';" alt="Irlanda" loading="lazy" /></div><div class="pad"><h3>Irlanda</h3><p>Consultații online • acte.</p><div class="hr"></div><a class="btn small ghost" href="#contact"><span>Contact</span></a></div></article>
-      <article class="card"><div class="thumb"><img src="/images/diaspora-canada.webp" onerror="this.onerror=null;this.src='/images/diaspora-default.webp';" alt="Canada" loading="lazy" /></div><div class="pad"><h3>Canada</h3><p>Consultații online • acte.</p><div class="hr"></div><a class="btn small ghost" href="#contact"><span>Contact</span></a></div></article>
-      <article class="card"><div class="thumb"><img src="/images/diaspora-australia.webp" onerror="this.onerror=null;this.src='/images/diaspora-default.webp';" alt="Australia" loading="lazy" /></div><div class="pad"><h3>Australia</h3><p>Consultații online • acte.</p><div class="hr"></div><a class="btn small ghost" href="#contact"><span>Contact</span></a></div></article>
-
-      <!-- Completează la 30 cu țările pe care le vrei (la nevoie îți dau lista completă gata) -->
-    </div>
-  </div>
-</section>
+      <div class="container">
+        <div class="head">
+          <h2 data-bind="diaspora.title">Diaspora</h2>
+          <p class="muted" data-bind="diaspora.subtitle"></p>
+        </div>
+        <div class="cardgrid" data-diaspora></div>
+      </div>
+    </section>
 
     <section id="galerie" class="section">
-  <div class="container">
-    <div class="head">
-      <h2>Galerie</h2>
-      <p class="muted">Apasă pe poză — se deschide full (lightbox). Încadrare sigură (fără frunte tăiată).</p>
-    </div>
+      <div class="container">
+        <div class="head">
+          <h2 data-bind="gallery.title">Galerie</h2>
+          <p class="muted" data-bind="gallery.subtitle"></p>
+        </div>
+        <div class="gallery" data-gallery></div>
+      </div>
+    </section>
 
-    <div class="gallery" data-gallery>
-      <a href="/images/gallery-1.webp">
-        <img
-          src="/images/gallery-1.webp"
-          onerror="this.onerror=null; this.src='/images/galeri-1.webp'; this.parentElement.href=this.src;"
-          alt="Galerie 1"
-          loading="lazy"
-        />
-      </a>
-
-      <a href="/images/gallery-2.webp">
-        <img
-          src="/images/gallery-2.webp"
-          onerror="this.onerror=null; this.src='/images/galeri-2.webp'; this.parentElement.href=this.src;"
-          alt="Galerie 2"
-          loading="lazy"
-        />
-      </a>
-
-      <a href="/images/gallery-3.webp">
-        <img
-          src="/images/gallery-3.webp"
-          onerror="this.onerror=null; this.src='/images/galeri-3.webp'; this.parentElement.href=this.src;"
-          alt="Galerie 3"
-          loading="lazy"
-        />
-      </a>
-
-      <a href="/images/gallery-4.webp">
-        <img
-          src="/images/gallery-4.webp"
-          onerror="this.onerror=null; this.src='/images/galeri-4.webp'; this.parentElement.href=this.src;"
-          alt="Galerie 4"
-          loading="lazy"
-        />
-      </a>
-
-      <a href="/images/gallery-5.webp">
-        <img
-          src="/images/gallery-5.webp"
-          onerror="this.onerror=null; this.src='/images/galeri-5.webp'; this.parentElement.href=this.src;"
-          alt="Galerie 5"
-          loading="lazy"
-        />
-      </a>
-
-      <a href="/images/gallery-6.webp">
-        <img
-          src="/images/gallery-6.webp"
-          onerror="this.onerror=null; this.src='/images/galeri-6.webp'; this.parentElement.href=this.src;"
-          alt="Galerie 6"
-          loading="lazy"
-        />
-      </a>
-    </div>
-  </div>
-</section>
     <section id="contact" class="section">
       <div class="container">
         <div class="card pad">
@@ -360,14 +183,12 @@
     </section>
   </main>
 
-  <!-- FLOAT CONTACT -->
   <div class="floatbar">
     <a class="fab" data-wa href="#"><strong>WhatsApp</strong><span class="small">Mesaj rapid</span></a>
     <a class="fab" data-tg href="#"><strong>Telegram</strong><span class="small">Mesaj</span></a>
     <a class="fab" data-vb href="#"><strong>Viber</strong><span class="small">Chat</span></a>
   </div>
 
-  <!-- LIGHTBOX -->
   <div class="lightbox" aria-hidden="true">
     <button class="lb-close" type="button" aria-label="Închide">×</button>
     <img alt="Preview" />
