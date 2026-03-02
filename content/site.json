@@ -1,68 +1,66 @@
 {
-  "lang": "ro",
-
   "contact": {
     "phone": "+37369968269",
     "email": "viorel.dodan@justice.md",
     "website": "https://www.vioreldodan.com"
   },
-
-  "ro": {
-    "hero": {
-      "kicker": "Premium Dark",
-      "badge": "Lux • Gold",
-      "title": "Reprezentare juridică pentru Diaspora și Chișinău",
-      "subtitle": "Strategie clară, comunicare rapidă, rezultate. Online pentru diaspora, reprezentare în instanță în Moldova."
-    }
+  "hero": {
+    "kicker": "Premium Dark",
+    "badge": "Lux • Gold",
+    "title": "Reprezentare juridică pentru Diaspora și Chișinău",
+    "subtitle": "Strategie clară, comunicare rapidă, rezultate. Online pentru diaspora, reprezentare în instanță în Moldova."
   },
-
-  "ru": {
-    "hero": {
-      "kicker": "Премиум",
-      "badge": "Lux • Gold",
-      "title": "Юридическое представительство для диаспоры и Кишинева",
-      "subtitle": "Четкая стратегия, быстрая коммуникация, результат."
-    }
-  },
-
-  "en": {
-    "hero": {
-      "kicker": "Premium",
-      "badge": "Lux • Gold",
-      "title": "Legal representation for Diaspora and Chișinău",
-      "subtitle": "Clear strategy, fast communication, real results."
-    }
-  },
-
   "about": {
     "title": "Despre",
-    "text": "Sunt Avocat Viorel Dodan. Ofer asistență juridică clară, orientată spre rezultat, cu comunicare directă și termene respectate.",
+    "text": "Sunt Avocat Viorel Dodan. Ofer asistență juridică clară, orientată spre rezultat.",
     "bullets": [
       "Consultanță juridică (online / fizic)",
       "Reprezentare în instanță",
-      "Dosare pentru diaspora (acte, procuri, litigii)"
-    ]
+      "Dosare pentru diaspora"
+    ],
+    "note": ""
   },
-
   "services": {
     "title": "Servicii",
-    "subtitle": "Selectează domeniul — îți răspund rapid.",
+    "subtitle": "Selectează domeniul.",
     "items": [
       {
         "title": "Dreptul familiei",
         "text": "Divorț • partaj • pensie • custodie.",
         "image": "/images/service-divort.webp",
         "waText": "familie"
+      },
+      {
+        "title": "Consultanță juridică",
+        "text": "Analiză documente • strategie.",
+        "image": "/images/service-consultanta.webp",
+        "waText": "consult"
+      },
+      {
+        "title": "Civil & succesiuni",
+        "text": "Litigii civile • succesiuni.",
+        "image": "/images/service-civil.webp",
+        "waText": "civil"
       }
     ]
   },
-
+  "diaspora": {
+    "title": "Diaspora",
+    "subtitle": "Consultații online.",
+    "fallbackImage": "/images/diaspora-default.webp",
+    "items": [
+      { "name": "Franța", "desc": "Consultații online", "image": "/images/diaspora-france.webp" },
+      { "name": "Germania", "desc": "Consultații online", "image": "/images/diaspora-germany.webp" },
+      { "name": "Italia", "desc": "Consultații online", "image": "/images/diaspora-italy.webp" }
+    ]
+  },
   "gallery": {
     "title": "Galerie",
-    "subtitle": "Apasă pe poză — se deschide full.",
+    "subtitle": "Apasă pe poză.",
     "items": [
       "/images/gallery-1.webp",
-      "/images/gallery-2.webp"
+      "/images/gallery-2.webp",
+      "/images/gallery-3.webp"
     ]
   }
 }
