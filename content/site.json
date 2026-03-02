@@ -141,47 +141,53 @@
     ]
   },
 
-  "diaspora": {
-    "title": { "ro": "Diaspora", "ru": "Диаспора", "en": "Diaspora" },
-    "subtitle": {
-      "ro": "Alege țara și intră pe pagina dedicată (ghid complet).",
-      "ru": "Выберите страну и откройте отдельную страницу (полный гид).",
-      "en": "Choose a country and open the dedicated page (full guide)."
-    },
-    "fallbackImage": "/images/diaspora-default.webp",
-    "items": [
-      { "slug": "italia", "name": { "ro": "Italia", "ru": "Италия", "en": "Italy" }, "desc": { "ro": "Ghid complet: divorț, pensie, partaj, custodie.", "ru": "Полный гид: развод, алименты, раздел имущества.", "en": "Full guide: divorce, support, asset division." }, "image": "/images/diaspora-italia.webp" },
-      { "slug": "franta", "name": { "ro": "Franța", "ru": "Франция", "en": "France" }, "desc": { "ro": "Dosare pentru diaspora în Franța — pași clari.", "ru": "Дела во Франции — понятные шаги.", "en": "France cases — clear steps." }, "image": "/images/diaspora-franta.webp" },
-      { "slug": "germania", "name": { "ro": "Germania", "ru": "Германия", "en": "Germany" }, "desc": { "ro": "Acte, strategii, reprezentare — Germania.", "ru": "Документы, стратегия — Германия.", "en": "Docs & strategy — Germany." }, "image": "/images/diaspora-germania.webp" },
-      { "slug": "marea-britanie", "name": { "ro": "Marea Britanie", "ru": "Великобритания", "en": "United Kingdom" }, "desc": { "ro": "Ghid diaspora UK — divorț, copii, acte.", "ru": "Гид UK — развод, дети, документы.", "en": "UK guide — divorce, kids, docs." }, "image": "/images/diaspora-marea-britanie.webp" },
-      { "slug": "usa", "name": { "ro": "USA", "ru": "США", "en": "USA" }, "desc": { "ro": "SUA — strategie, acte, pași online.", "ru": "США — стратегия и документы.", "en": "USA — strategy and docs." }, "image": "/images/diaspora-usa.webp" },
-      { "slug": "spania", "name": { "ro": "Spania", "ru": "Испания", "en": "Spain" }, "desc": { "ro": "Spania — ghid complet pentru diaspora.", "ru": "Испания — полный гид.", "en": "Spain — full guide." }, "image": "/images/diaspora-spania.webp" },
-      { "slug": "portugalia", "name": { "ro": "Portugalia", "ru": "Португалия", "en": "Portugal" }, "desc": { "ro": "Portugalia — divorț, pensie, partaj.", "ru": "Португалия — развод, алименты.", "en": "Portugal — divorce & support." }, "image": "/images/diaspora-portugalia.webp" },
-      { "slug": "irlanda", "name": { "ro": "Irlanda", "ru": "Ирландия", "en": "Ireland" }, "desc": { "ro": "Irlanda — pași clari, online.", "ru": "Ирландия — шаги онлайн.", "en": "Ireland — clear steps." }, "image": "/images/diaspora-irlanda.webp" },
-      { "slug": "belgia", "name": { "ro": "Belgia", "ru": "Бельгия", "en": "Belgium" }, "desc": { "ro": "Belgia — consult + acte + strategie.", "ru": "Бельгия — консультации и документы.", "en": "Belgium — consult & docs." }, "image": "/images/diaspora-belgia.webp" },
-      { "slug": "olanda", "name": { "ro": "Olanda", "ru": "Нидерланды", "en": "Netherlands" }, "desc": { "ro": "Olanda — ghid pentru diaspora.", "ru": "Нидерланды — гид.", "en": "Netherlands — guide." }, "image": "/images/diaspora-olanda.webp" },
-      { "slug": "austria", "name": { "ro": "Austria", "ru": "Австрия", "en": "Austria" }, "desc": { "ro": "Austria — pași și acte.", "ru": "Австрия — шаги и документы.", "en": "Austria — steps & docs." }, "image": "/images/diaspora-austria.webp" },
-      { "slug": "elvetia", "name": { "ro": "Elveția", "ru": "Швейцария", "en": "Switzerland" }, "desc": { "ro": "Elveția — consult + strategie.", "ru": "Швейцария — стратегия.", "en": "Switzerland — strategy." }, "image": "/images/diaspora-elvetia.webp" },
-      { "slug": "suedia", "name": { "ro": "Suedia", "ru": "Швеция", "en": "Sweden" }, "desc": { "ro": "Suedia — ghid diaspora.", "ru": "Швеция — гид.", "en": "Sweden — guide." }, "image": "/images/diaspora-suedia.webp" },
-      { "slug": "norvegia", "name": { "ro": "Norvegia", "ru": "Норвегия", "en": "Norway" }, "desc": { "ro": "Norvegia — pași clari.", "ru": "Норвегия — понятные шаги.", "en": "Norway — clear steps." }, "image": "/images/diaspora-norvegia.webp" },
-      { "slug": "danemarca", "name": { "ro": "Danemarca", "ru": "Дания", "en": "Denmark" }, "desc": { "ro": "Danemarca — ghid complet.", "ru": "Дания — полный гид.", "en": "Denmark — full guide." }, "image": "/images/diaspora-danemarca.webp" },
-      { "slug": "finlanda", "name": { "ro": "Finlanda", "ru": "Финляндия", "en": "Finland" }, "desc": { "ro": "Finlanda — consult + acte.", "ru": "Финляндия — документы.", "en": "Finland — docs." }, "image": "/images/diaspora-finlanda.webp" },
-      { "slug": "polonia", "name": { "ro": "Polonia", "ru": "Польша", "en": "Poland" }, "desc": { "ro": "Polonia — ghid diaspora.", "ru": "Польша — гид.", "en": "Poland — guide." }, "image": "/images/diaspora-polonia.webp" },
-      { "slug": "cehia", "name": { "ro": "Cehia", "ru": "Чехия", "en": "Czechia" }, "desc": { "ro": "Cehia — pași, acte, strategie.", "ru": "Чехия — шаги и документы.", "en": "Czechia — steps & docs." }, "image": "/images/diaspora-cehia.webp" },
-      { "slug": "slovacia", "name": { "ro": "Slovacia", "ru": "Словакия", "en": "Slovakia" }, "desc": { "ro": "Slovacia — ghid complet.", "ru": "Словакия — полный гид.", "en": "Slovakia — full guide." }, "image": "/images/diaspora-slovacia.webp" },
-      { "slug": "ungaria", "name": { "ro": "Ungaria", "ru": "Венгрия", "en": "Hungary" }, "desc": { "ro": "Ungaria — consult + pași.", "ru": "Венгрия — шаги.", "en": "Hungary — steps." }, "image": "/images/diaspora-ungaria.webp" },
-      { "slug": "romania", "name": { "ro": "România", "ru": "Румыния", "en": "Romania" }, "desc": { "ro": "România — ghid complet diaspora.", "ru": "Румыния — полный гид.", "en": "Romania — full guide." }, "image": "/images/diaspora-romania.webp" },
-      { "slug": "grecia", "name": { "ro": "Grecia", "ru": "Греция", "en": "Greece" }, "desc": { "ro": "Grecia — pași clari.", "ru": "Греция — шаги.", "en": "Greece — steps." }, "image": "/images/diaspora-grecia.webp" },
-      { "slug": "cipru", "name": { "ro": "Cipru", "ru": "Кипр", "en": "Cyprus" }, "desc": { "ro": "Cipru — ghid diaspora.", "ru": "Кипр — гид.", "en": "Cyprus — guide." }, "image": "/images/diaspora-cipru.webp" },
-      { "slug": "israel", "name": { "ro": "Israel", "ru": "Израиль", "en": "Israel" }, "desc": { "ro": "Israel — consult + acte.", "ru": "Израиль — документы.", "en": "Israel — docs." }, "image": "/images/diaspora-israel.webp" },
-      { "slug": "emiratele-arabe-unite", "name": { "ro": "Emiratele Arabe Unite", "ru": "ОАЭ", "en": "UAE" }, "desc": { "ro": "UAE — ghid complet.", "ru": "ОАЭ — полный гид.", "en": "UAE — full guide." }, "image": "/images/diaspora-emiratele-arabe-unite.webp" },
-      { "slug": "qatar", "name": { "ro": "Qatar", "ru": "Катар", "en": "Qatar" }, "desc": { "ro": "Qatar — pași clari.", "ru": "Катар — шаги.", "en": "Qatar — steps." }, "image": "/images/diaspora-qatar.webp" },
-      { "slug": "arabia-saudita", "name": { "ro": "Arabia Saudită", "ru": "Саудовская Аравия", "en": "Saudi Arabia" }, "desc": { "ro": "Arabia Saudită — ghid diaspora.", "ru": "Саудовская Аравия — гид.", "en": "Saudi Arabia — guide." }, "image": "/images/diaspora-arabia-saudita.webp" },
-      { "slug": "turcia", "name": { "ro": "Turcia", "ru": "Турция", "en": "Turkey" }, "desc": { "ro": "Turcia — consult + acte.", "ru": "Турция — документы.", "en": "Turkey — docs." }, "image": "/images/diaspora-turcia.webp" },
-      { "slug": "rusia", "name": { "ro": "Rusia", "ru": "Россия", "en": "Russia" }, "desc": { "ro": "Rusia — ghid complet.", "ru": "Россия — полный гид.", "en": "Russia — full guide." }, "image": "/images/diaspora-rusia.webp" },
-      { "slug": "canada", "name": { "ro": "Canada", "ru": "Канада", "en": "Canada" }, "desc": { "ro": "Canada — pași clari.", "ru": "Канада — шаги.", "en": "Canada — steps." }, "image": "/images/diaspora-canada.webp" }
-    ]
+"diaspora": {
+  "title": { "ro": "Diaspora", "ru": "Диаспора", "en": "Diaspora" },
+  "subtitle": {
+    "ro": "Alege țara și intră pe pagina dedicată (ghid complet).",
+    "ru": "Выберите страну и откройте отдельную страницу (полный гид).",
+    "en": "Choose a country and open the dedicated page (full guide)."
   },
+  "fallbackImage": "/images/diaspora-default.webp",
+  "items": [
+    {
+      "slug": "italia",
+      "name": { "ro": "Italia", "ru": "Италия", "en": "Italy" },
+      "desc": { "ro": "Ghid complet: divorț, pensie, partaj, custodie.", "ru": "Полный гид: развод, алименты, раздел имущества.", "en": "Full guide: divorce, support, asset division." },
+      "image": "/images/diaspora-italy.webp"
+    },
+    {
+      "slug": "franta",
+      "name": { "ro": "Franța", "ru": "Франция", "en": "France" },
+      "desc": { "ro": "Dosare diaspora în Franța — pași clari.", "ru": "Дела во Франции — понятные шаги.", "en": "France cases — clear steps." },
+      "image": "/images/diaspora-france.webp"
+    },
+    {
+      "slug": "germania",
+      "name": { "ro": "Germania", "ru": "Германия", "en": "Germany" },
+      "desc": { "ro": "Acte, strategii, reprezentare — Germania.", "ru": "Документы, стратегия — Германия.", "en": "Docs & strategy — Germany." },
+      "image": "/images/diaspora-germany.webp"
+    },
+    {
+      "slug": "marea-britanie",
+      "name": { "ro": "Marea Britanie", "ru": "Великобритания", "en": "United Kingdom" },
+      "desc": { "ro": "Ghid diaspora UK — divorț, copii, acte.", "ru": "Гид UK — развод, дети, документы.", "en": "UK guide — divorce, kids, docs." },
+      "image": "/images/diaspora-uk.webp"
+    },
+    {
+      "slug": "usa",
+      "name": { "ro": "USA", "ru": "США", "en": "USA" },
+      "desc": { "ro": "SUA — strategie, acte, pași online.", "ru": "США — стратегия и документы.", "en": "USA — strategy and docs." },
+      "image": "/images/diaspora-usa.webp"
+    },
+    {
+      "slug": "moldova",
+      "name": { "ro": "Moldova", "ru": "Молдова", "en": "Moldova" },
+      "desc": { "ro": "Reprezentare și consultații în Chișinău.", "ru": "Представительство и консультации в Кишинёве.", "en": "Representation and consults in Chișinău." },
+      "image": "/images/diaspora-moldova.webp"
+    }
+  ]
+}
 
   "gallery": {
     "title": { "ro": "Galerie", "ru": "Галерея", "en": "Gallery" },
