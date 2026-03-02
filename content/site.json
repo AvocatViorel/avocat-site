@@ -1,15 +1,33 @@
 {
+  "lang": "ro",
+
   "contact": {
     "phone": "+37369968269",
     "email": "viorel.dodan@justice.md",
     "website": "https://www.vioreldodan.com"
   },
+
   "hero": {
-    "kicker": "Premium Dark",
-    "badge": "Lux • Gold",
-    "title": "Reprezentare juridică pentru Diaspora și Chișinău",
-    "subtitle": "Strategie clară, comunicare rapidă, rezultate. Online pentru diaspora, reprezentare în instanță în Moldova."
+    "ro": {
+      "kicker": "Premium Dark",
+      "badge": "Lux • Gold",
+      "title": "Reprezentare juridică pentru Diaspora și Chișinău",
+      "subtitle": "Strategie clară, comunicare rapidă, rezultate."
+    },
+    "ru": {
+      "kicker": "Премиум",
+      "badge": "Lux • Gold",
+      "title": "Юридическое представительство для диаспоры и Кишинева",
+      "subtitle": "Четкая стратегия, быстрая коммуникация, результат."
+    },
+    "en": {
+      "kicker": "Premium",
+      "badge": "Lux • Gold",
+      "title": "Legal representation for Diaspora and Chișinău",
+      "subtitle": "Clear strategy, fast communication, real results."
+    }
   },
+
   "about": {
     "title": "Despre",
     "text": "Sunt Avocat Viorel Dodan. Ofer asistență juridică clară, orientată spre rezultat.",
@@ -20,6 +38,7 @@
     ],
     "note": ""
   },
+
   "services": {
     "title": "Servicii",
     "subtitle": "Selectează domeniul.",
@@ -44,6 +63,7 @@
       }
     ]
   },
+
   "diaspora": {
     "title": "Diaspora",
     "subtitle": "Consultații online.",
@@ -54,6 +74,7 @@
       { "name": "Italia", "desc": "Consultații online", "image": "/images/diaspora-italy.webp" }
     ]
   },
+
   "gallery": {
     "title": "Galerie",
     "subtitle": "Apasă pe poză.",
