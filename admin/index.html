@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin — Avocat Viorel Dodan</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <style>
+    .admin-wrap{max-width:980px;margin:24px auto;padding:0 18px}
+    .admin-grid{display:grid;gap:12px}
+    .row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    @media(max-width:900px){.row{grid-template-columns:1fr}}
+    input, textarea{width:100%;padding:12px 12px;border-radius:14px;border:1px solid rgba(214,179,91,.28);background:rgba(17,19,24,.7);color:var(--text)}
+    textarea{min-height:110px;resize:vertical}
+    .btnbar{display:flex;gap:10px;flex-wrap:wrap}
+    .tiny{font-size:12px;color:var(--muted)}
+    .item{border:1px solid rgba(214,179,91,.22);border-radius:16px;padding:12px;background:rgba(17,19,24,.55)}
+    .item h4{margin:0 0 8px}
+    .danger{border-color:rgba(255,120,120,.35)}
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">VD</div>
+        <div class="brandtext">
+          <div class="name">Admin</div>
+          <div class="tag">ELITE EUROPE</div>
+        </div>
+      </div>
+      <div class="btnbar">
+        <a class="btn ghost" href="/" style="padding:10px 12px;border-radius:12px">Vezi site</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="admin-wrap">
+    <div class="card pad">
+      <h2>Admin PRO (fără HTML)</h2>
+      <p class="muted">Editezi aici, apoi apeși <strong>Download site.json</strong> și încarci fișierul în GitHub la <code>/content/site.json</code>.</p>
+
+      <div class="btnbar">
+        <button class="btn primary" id="loadBtn" type="button">Load from site</button>
+        <button class="btn ghost" id="downloadBtn" type="button">Download site.json</button>
+        <button class="btn ghost" id="copyBtn" type="button">Copy JSON</button>
+      </div>
+      <p class="tiny">Tip: după upload, Cloudflare se actualizează automat. Dacă nu, Redeploy din Pages.</p>
+    </div>
+
+    <div class="admin-grid" style="margin-top:12px">
+
+      <div class="card pad">
+        <h3>Contact</h3>
+        <div class="row">
+          <div><div class="tiny">Telefon</div><input id="phone" placeholder="+373..." /></div>
+          <div><div class="tiny">Email</div><input id="email" placeholder="email..." /></div>
+        </div>
+        <div style="margin-top:10px">
+          <div class="tiny">Website</div>
+          <input id="website" placeholder="https://..." />
+        </div>
+      </div>
+
+      <div class="card pad">
+        <h3>Hero</h3>
+        <div class="row">
+          <div><div class="tiny">Kicker</div><input id="heroKicker" /></div>
+          <div><div class="tiny">Badge</div><input id="heroBadge" /></div>
+        </div>
+        <div style="margin-top:10px"><div class="tiny">Titlu</div><input id="heroTitle" /></div>
+        <div style="margin-top:10px"><div class="tiny">Subtitlu</div><textarea id="heroSub"></textarea></div>
+      </div>
+
+      <div class="card pad">
+        <h3>Despre</h3>
+        <div class="row">
+          <div><div class="tiny">Titlu</div><input id="aboutTitle" /></div>
+          <div><div class="tiny">Notă</div><input id="aboutNote" /></div>
+        </div>
+        <div style="margin-top:10px"><div class="tiny">Text</div><textarea id="aboutText"></textarea></div>
+        <div style="margin-top:10px">
+          <div class="tiny">Buline (câte una pe rând)</div>
+          <textarea id="aboutBullets" placeholder="Linia 1&#10;Linia 2&#10;Linia 3"></textarea>
+        </div>
+      </div>
+
+      <div class="card pad">
+        <h3>Servicii</h3>
+        <div class="row">
+          <div><div class="tiny">Titlu</div><input id="servicesTitle" /></div>
+          <div><div class="tiny">Subtitlu</div><input id="servicesSub" /></div>
+        </div>
+        <div style="margin-top:10px" class="btnbar">
+          <button class="btn ghost" id="addService" type="button">+ Adaugă serviciu</button>
+        </div>
+        <div id="servicesList" style="margin-top:10px;display:grid;gap:10px"></div>
+      </div>
+
+      <div class="card pad">
+        <h3>Diaspora</h3>
+        <div class="row">
+          <div><div class="tiny">Titlu</div><input id="diasporaTitle" /></div>
+          <div><div class="tiny">Subtitlu</div><input id="diasporaSub" /></div>
+        </div>
+        <div style="margin-top:10px"><div class="tiny">Fallback image</div><input id="diasporaFallback" placeholder="/images/diaspora-default.webp" /></div>
+        <div style="margin-top:10px" class="btnbar">
+          <button class="btn ghost" id="addCountry" type="button">+ Adaugă țară</button>
+        </div>
+        <div id="diasporaList" style="margin-top:10px;display:grid;gap:10px"></div>
+      </div>
+
+      <div class="card pad">
+        <h3>Galerie</h3>
+        <div class="row">
+          <div><div class="tiny">Titlu</div><input id="galleryTitle" /></div>
+          <div><div class="tiny">Subtitlu</div><input id="gallerySub" /></div>
+        </div>
+        <div style="margin-top:10px" class="btnbar">
+          <button class="btn ghost" id="addGallery" type="button">+ Adaugă poză</button>
+        </div>
+        <div id="galleryList" style="margin-top:10px;display:grid;gap:10px"></div>
+      </div>
+
+      <div class="card pad">
+        <h3>JSON (preview)</h3>
+        <textarea id="jsonPreview" style="min-height:260px"></textarea>
+        <p class="tiny">Nu trebuie să editezi aici. E doar ca să vezi ce descarci.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="/admin/admin.js"></script>
+</body>
+</html>
