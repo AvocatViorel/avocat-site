@@ -1,15 +1,39 @@
 {
+  "lang": "ro",
+
   "contact": {
     "phone": "+37369968269",
     "email": "viorel.dodan@justice.md",
     "website": "https://www.vioreldodan.com"
   },
-  "hero": {
-    "kicker": "Premium Dark",
-    "badge": "Lux • Gold",
-    "title": "Reprezentare juridică pentru Diaspora și Chișinău",
-    "subtitle": "Strategie clară, comunicare rapidă, rezultate. Online pentru diaspora, reprezentare în instanță în Moldova."
+
+  "ro": {
+    "hero": {
+      "kicker": "Premium Dark",
+      "badge": "Lux • Gold",
+      "title": "Reprezentare juridică pentru Diaspora și Chișinău",
+      "subtitle": "Strategie clară, comunicare rapidă, rezultate. Online pentru diaspora, reprezentare în instanță în Moldova."
+    }
   },
+
+  "ru": {
+    "hero": {
+      "kicker": "Премиум",
+      "badge": "Lux • Gold",
+      "title": "Юридическое представительство для диаспоры и Кишинева",
+      "subtitle": "Четкая стратегия, быстрая коммуникация, результат."
+    }
+  },
+
+  "en": {
+    "hero": {
+      "kicker": "Premium",
+      "badge": "Lux • Gold",
+      "title": "Legal representation for Diaspora and Chișinău",
+      "subtitle": "Clear strategy, fast communication, real results."
+    }
+  },
+
   "about": {
     "title": "Despre",
     "text": "Sunt Avocat Viorel Dodan. Ofer asistență juridică clară, orientată spre rezultat, cu comunicare directă și termene respectate.",
@@ -17,74 +41,28 @@
       "Consultanță juridică (online / fizic)",
       "Reprezentare în instanță",
       "Dosare pentru diaspora (acte, procuri, litigii)"
-    ],
-    "note": "Dacă vrei, ulterior îți activez și RO/RU/EN complet + CMS (editor)."
+    ]
   },
+
   "services": {
     "title": "Servicii",
-    "subtitle": "Selectează domeniul — îți răspund rapid cu pașii următori și estimare de timp.",
+    "subtitle": "Selectează domeniul — îți răspund rapid.",
     "items": [
       {
         "title": "Dreptul familiei",
-        "text": "Divorț • partaj • pensie de întreținere • custodie • ordonanțe.",
+        "text": "Divorț • partaj • pensie • custodie.",
         "image": "/images/service-divort.webp",
         "waText": "familie"
-      },
-      {
-        "title": "Consultanță juridică",
-        "text": "Analiză documente • strategie • pași clari • pregătire dosar.",
-        "image": "/images/service-consultanta.webp",
-        "waText": "consult"
-      },
-      {
-        "title": "Civil & succesiuni",
-        "text": "Litigii civile • succesiuni • datorii • contracte.",
-        "image": "/images/service-civil.webp",
-        "waText": "civil"
       }
     ]
   },
-  "fees": {
-    "title": "Onorarii",
-    "text": "Onorariile se stabilesc transparent, în funcție de complexitate și termen. Pentru diaspora, putem lucra integral online.",
-    "cards": [
-      { "title": "Consultație", "value": "la cerere", "sub": "Online / Chișinău" },
-      { "title": "Reprezentare", "value": "la cerere", "sub": "Dosare + instanță" },
-      { "title": "Diaspora", "value": "la cerere", "sub": "Acte + consult + strategie" }
-    ]
-  },
-  "faq": {
-    "title": "FAQ",
-    "subtitle": "Întrebări scurte, răspunsuri clare.",
-    "items": [
-      { "q": "Pot lucra cu dvs. dacă sunt în diaspora?", "a": "Da. Putem face consult online, analiză acte, împuterniciri și pași concreți." },
-      { "q": "În cât timp primesc răspuns?", "a": "De obicei rapid. Trimite mesaj pe WhatsApp și spune pe scurt problema + ce țară ești." },
-      { "q": "Ce documente să pregătesc?", "a": "În funcție de caz. După primul mesaj îți trimit lista exactă." }
-    ]
-  },
-  "diaspora": {
-    "title": "Diaspora",
-    "subtitle": "Alege țara. Dacă lipsește imaginea, apare automat imaginea default.",
-    "fallbackImage": "/images/diaspora-default.webp",
-    "items": [
-      { "name": "Franța", "desc": "Consultații online • acte • strategii juridice.", "image": "/images/diaspora-france.webp" },
-      { "name": "Germania", "desc": "Consultații online • acte • strategii juridice.", "image": "/images/diaspora-germany.webp" },
-      { "name": "Italia", "desc": "Consultații online • acte • strategii juridice.", "image": "/images/diaspora-italy.webp" },
-      { "name": "UK", "desc": "Consultații online • acte • strategii juridice.", "image": "/images/diaspora-uk.webp" },
-      { "name": "USA", "desc": "Consultații online • acte • strategii juridice.", "image": "/images/diaspora-usa.webp" },
-      { "name": "Moldova", "desc": "Reprezentare și consultații în Chișinău.", "image": "/images/diaspora-moldova.webp" }
-    ]
-  },
+
   "gallery": {
     "title": "Galerie",
-    "subtitle": "Apasă pe poză — se deschide full (lightbox). Încadrare sigură (fără frunte tăiată).",
+    "subtitle": "Apasă pe poză — se deschide full.",
     "items": [
       "/images/gallery-1.webp",
-      "/images/gallery-2.webp",
-      "/images/gallery-3.webp",
-      "/images/gallery-4.webp",
-      "/images/gallery-5.webp",
-      "/images/gallery-6.webp"
+      "/images/gallery-2.webp"
     ]
   }
 }
