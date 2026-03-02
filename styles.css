@@ -226,3 +226,18 @@ h3{margin:0 0 6px}
 .footer{padding:26px 0 40px;color:var(--muted);border-top:1px solid var(--line);margin-top:44px}
 .foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 .gold{color:var(--gold);font-weight:950}
+/* ===== ELITE HEADER ===== */
+.topbar{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  backdrop-filter: blur(12px);
+  background: rgba(10,12,16,.75);
+  border-bottom:1px solid rgba(214,179,91,.15);
+  transition: all .3s ease;
+}
+
+.topbar.scrolled{
+  background: rgba(10,12,16,.92);
+  box-shadow:0 10px 40px rgba(0,0,0,.4);
+}
