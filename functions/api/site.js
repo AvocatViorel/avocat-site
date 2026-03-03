@@ -1,4 +1,4 @@
-import {DEFAULT_SITE} from '../_defaults.js';
+import {DEFAULT_SITE} from '../defaults.js';
 export async function onRequestGet({request, env}) {
   const url = new URL(request.url);
   const lang = url.searchParams.get('lang') || 'ro';
