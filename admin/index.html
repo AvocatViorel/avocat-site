@@ -31,22 +31,23 @@
     code{color:var(--gold)}
   </style>
 </head>
-<body><script>
+<body>
+<script>
 (function () {
-
-  const PASS = "Privet123@";
+  const PASS = "Privet123@"; // <-- scrie parola ta
 
   const ok = sessionStorage.getItem("admin_ok");
-
   if (ok !== "yes") {
     const p = prompt("Admin login — introdu parola:");
-
     if (p !== PASS) {
       alert("Acces refuzat.");
       window.location.href = "/";
       return;
     }
-
+    sessionStorage.setItem("admin_ok","yes");
+  }
+})();
+</script>
     sessionStorage.setItem("admin_ok","yes");
   }
 
