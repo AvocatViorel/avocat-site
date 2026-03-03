@@ -236,18 +236,19 @@ export async function onRequest(context) {
   const url = new URL(request.url);
   const path = url.pathname;
 
-  // ✅ Let static assets pass through (CSS/JS/Images/Admin)
-  if (
-    path.startsWith('/assets/') ||
-    path.startsWith('/images/') ||
-    path.startsWith('/admin/') ||
-    path === '/favicon.ico' ||
-    path === '/robots.txt' ||
-    path === '/sitemap.xml' ||
-    /\.(css|js|png|jpg|jpeg|webp|svg|ico|txt|map)$/i.test(path)
-  ) {
-    return context.next();
-  }
+ // ✅ Let static assets pass through (CSS/JS/Images/Admin)
+if (
+  path.startsWith('/assets/') ||
+  path.startsWith('/images/') ||
+  path === '/admin' ||           // ✅ ADAUGĂ ASTA
+  path.startsWith('/admin/') ||  // ✅ rămâne
+  path === '/favicon.ico' ||
+  path === '/robots.txt' ||
+  path === '/sitemap.xml' ||
+  /\.(css|js|png|jpg|jpeg|webp|svg|ico|txt|map)$/i.test(path)
+) {
+  return context.next();
+}
 
   // redirect / -> /ro
   if (path === '/') return Response.redirect(url.origin + '/ro', 302);
