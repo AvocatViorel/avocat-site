@@ -1,4 +1,4 @@
-import {DEFAULT_SITE, DEFAULT_COUNTRIES, DEFAULT_ARTICLES} from './_defaults.js';
+import {DEFAULT_SITE, DEFAULT_COUNTRIES, DEFAULT_ARTICLES} from './defaults.js';
 
 function esc(s){return String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 
