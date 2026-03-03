@@ -293,3 +293,8 @@ if (
 
   return new Response('Not found', {status:404});
 }
+const allowedLangs = ['ro', 'ru', 'en'];
+
+if (segments.length > 0 && !allowedLangs.includes(segments[0])) {
+  return new Response("Not found", { status: 404 });
+}
