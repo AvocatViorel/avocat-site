@@ -1,4 +1,4 @@
-import { DEFAULT_SERVICES } from "../defaults.js";
+import { DEFAULT_SERVICES } from "./defaults.js";
 import { keyFor, kvGetJSON, json } from "./kv.js";
 
 export async function onRequest(context){
